@@ -1,6 +1,6 @@
 // src/App.jsx
 import React from 'react';
-import { HashRouter as Router, Routes, Route, HashRouter } from 'react-router-dom';
+import {  Routes, Route} from 'react-router-dom';
 import { ThemeProvider } from './context/ThemeContext';
 import { CartProvider } from './context/CartContext';
 import { AuthProvider } from './context/AuthContext';
@@ -25,7 +25,6 @@ import Wishlist from './pages/Wishlist';
 
 function App() {
   return (
-    <HashRouter>
     <ThemeProvider>
       <CartProvider>
         <AuthProvider>
@@ -53,7 +52,7 @@ function App() {
         </AuthProvider>
       </CartProvider>
     </ThemeProvider>
-    </HashRouter>
+   
   );
 }
 
