@@ -73,7 +73,7 @@ const Home = () => {
           <a href="/products" className="drop-shadow-2xl flex justify-center">
             <img 
               src={Shop} 
-              alt="shop-now" 
+              alt="shopNow" 
               height="50%" 
               width="80%"
               className="w-full h-auto object-contain"
