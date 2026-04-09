@@ -2,6 +2,7 @@ import React from "react";
 import { useTheme } from "../context/ThemeContext";
 import product2 from "../assets/Product2.png";
 import iphone from "../assets/iphone.png";
+import Shop from "../assets/Shop-Now.png";
 const Home = () => {
   const { isDark } = useTheme();
 
@@ -71,7 +72,7 @@ const Home = () => {
         <div className={`w-64 text-4xl grid gap-4 rounded-2xl p-2 transition-colors duration-300 ${isDark ? 'bg-gray-800' : 'bg-sky-400'} transition-transform duration-500 hover:scale-105`}>
           <a href="/products" className="drop-shadow-2xl flex justify-center">
             <img 
-              src="/src/assets/Shop-Now.png" 
+              src={Shop-Now} 
               alt="shop-now" 
               height="50%" 
               width="80%"
