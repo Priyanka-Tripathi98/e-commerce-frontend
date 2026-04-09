@@ -1,6 +1,6 @@
 import React from "react";
 import { useTheme } from "../context/ThemeContext";
-import product2 from "../assets/product2.png";
+import product2 from "../assets/Product2.png";
 import iphone from "../assets/iphone.png";
 const Home = () => {
   const { isDark } = useTheme();
