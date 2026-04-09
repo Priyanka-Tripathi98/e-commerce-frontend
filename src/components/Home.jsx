@@ -1,6 +1,7 @@
 import React from "react";
 import { useTheme } from "../context/ThemeContext";
-
+import product2 from "../assets/product2.png";
+import iphone from "../assets/iphone.png";
 const Home = () => {
   const { isDark } = useTheme();
 
@@ -50,7 +51,7 @@ const Home = () => {
         {/* Middle Column 1: Product Image */}
         <a href="/products" className={`w-64 rounded-2xl p-2 transition-colors duration-300 ${isDark ? 'bg-gray-800' : 'bg-sky-400'} transition-transform duration-500 hover:scale-105`}>
           <img 
-            src="../src/assets/product2.png" 
+            src={product2} 
             alt="image1" 
             className="drop-shadow-2xl rounded-full w-full h-auto object-contain"
           />
@@ -59,7 +60,7 @@ const Home = () => {
         {/* Middle Column 2: iPhone Image */}
         <a href="/products" className={`w-64 rounded-2xl p-2 transition-colors duration-300 ${isDark ? 'bg-gray-800' : 'bg-sky-400'} transition-transform duration-500 hover:scale-105`}>
           <img 
-            src="../src/assets/iphone.png" 
+            src={iphone} 
             alt="image2" 
             width="100%" 
             className="drop-shadow-2xl rounded-[15px]"
